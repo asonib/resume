@@ -32,12 +32,35 @@ pdflatex resume.tex
 latexmk -pdf resume.tex
 ```
 
+### Validate Before Compiling
+
+Use the validation script to check for errors without generating the PDF:
+
+```bash
+# Make the script executable (first time only)
+chmod +x validate-tex.sh
+
+# Validate the resume
+./validate-tex.sh
+
+# Or validate a specific file
+./validate-tex.sh resume.tex
+```
+
+The validation script will:
+- ✓ Check if pdflatex is installed
+- ✓ Compile in draft mode (faster, no PDF output)
+- ✓ Report any compilation errors with details
+- ✓ Show warnings (missing references, overfull boxes, etc.)
+- ✓ Clean up temporary files automatically
+
 ## 📦 Structure
 
 ```
 resume/
 ├── resume.tex          # Main LaTeX source file
 ├── resume.pdf          # Generated PDF (not tracked in git)
+├── validate-tex.sh     # LaTeX validation script
 └── README.md           # This file
 ```
 
