@@ -21,7 +21,7 @@ This repository contains my professional resume in LaTeX format, designed to be:
 
 **Prerequisites:**
 - LaTeX distribution (TeX Live, MiKTeX, or MacTeX)
-- Required packages: `latexsym`, `fullpage`, `titlesec`, `marvosym`, `color`, `verbatim`, `enumitem`, `hyperref`, `fancyhdr`, `babel`, `tabularx`, `fontawesome5`, `multicol`
+- Required packages: `latexsym`, `fullpage`, `titlesec`, `marvosym`, `color`, `verbatim`, `enumitem`, `hyperref`, `fancyhdr`, `babel`, `tabularx`, `multicol`
 
 **Compilation:**
 ```bash
@@ -96,8 +96,8 @@ This resume template is based on Jake's Resume Template and is available under t
 ## 🔗 Contact
 
 - **Email**: arburman@outlook.com
-- **LinkedIn**: [linkedin.com/in/aryan-burman](https://linkedin.com/in/aryan-burman)
-- **GitHub**: [github.com/aryan-burman](https://github.com/aryan-burman)
+- **LinkedIn**: [linkedin.com/in/aryan-burman-5a778516b](https://www.linkedin.com/in/aryan-burman-5a778516b/)
+- **GitHub**: [github.com/asonib](https://github.com/asonib)
 
 ---
 

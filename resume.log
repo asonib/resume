@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.10.30)  31 OCT 2026 00:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.10.30)  31 OCT 2026 00:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -287,37 +287,16 @@ Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
 \TX@cols=\count299
 \TX@ftn=\toks25
 )
-(/usr/local/texlive/2026/texmf-dist/tex/latex/fontawesome5/fontawesome5.sty
-(/usr/local/texlive/2026/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2026-01-19 L3 programming layer (loader) 
-
-(/usr/local/texlive/2026/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count300
-))
-Package: fontawesome5 2022/05/02 v5.15.4 Font Awesome 5
-
-(/usr/local/texlive/2026/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-Package: l3keys2e 2025-10-09 LaTeX2e option processing using LaTeX3 keys
-) (/usr/local/texlive/2026/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2025-10-09 L3 Experimental document command parser
-)
-(/usr/local/texlive/2026/texmf-dist/tex/latex/fontawesome5/fontawesome5-generic
--helper.sty
-Package: fontawesome5-generic-helper 2022/05/02 v5.15.4 non-uTeX helper for fon
-tawesome5
-
-(/usr/local/texlive/2026/texmf-dist/tex/latex/fontawesome5/fontawesome5-mapping
-.def))) (/usr/local/texlive/2026/texmf-dist/tex/latex/tools/multicol.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2025/10/21 v2.0b multicolumn formatting (FMi)
-\c@tracingmulticols=\count301
+\c@tracingmulticols=\count300
 \mult@box=\box57
 \multicol@leftmargin=\dimen167
-\c@unbalance=\count302
-\c@collectmore=\count303
-\doublecol@number=\count304
-\multicoltolerance=\count305
-\multicolpretolerance=\count306
+\c@unbalance=\count301
+\c@collectmore=\count302
+\doublecol@number=\count303
+\multicoltolerance=\count304
+\multicolpretolerance=\count305
 \full@width=\dimen168
 \page@free=\dimen169
 \premulticols=\dimen170
@@ -368,19 +347,23 @@ Package: multicol 2025/10/21 v2.0b multicolumn formatting (FMi)
 \@tempa=\box98
 \@tempa=\box99
 \@tempa=\box100
-\c@minrows=\count307
-\c@columnbadness=\count308
-\c@finalcolumnbadness=\count309
+\c@minrows=\count306
+\c@columnbadness=\count307
+\c@finalcolumnbadness=\count308
 \last@try=\dimen173
 \multicolovershoot=\dimen174
 \multicolundershoot=\dimen175
 \mult@nat@firstbox=\box101
 \colbreak@box=\box102
-\mc@col@check@num=\count310
-\g__mc_curr_col_int=\count311
+\mc@col@check@num=\count309
+\g__mc_curr_col_int=\count310
 )
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pdftex/glyphtounicode.tex)
-No file resume.aux.
+(/usr/local/texlive/2026/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count311
+)
+(./resume.aux)
 \openout1 = `resume.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 97.
@@ -401,6 +384,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 97.
 LaTeX Font Info:    ... okay on input line 97.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 97.
 LaTeX Font Info:    ... okay on input line 97.
+
 (/usr/local/texlive/2026/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count312
@@ -416,60 +400,29 @@ LaTeX Font Info:    ... okay on input line 97.
 \everyMPtoPDFconversion=\toks27
 )
 Package hyperref Info: Link coloring OFF on input line 97.
+ (./resume.out) (./resume.out)
 \@outlinefile=\write3
 \openout3 = `resume.out'.
 
-LaTeX Font Info:    Trying to load font information for U+fontawesomefree2 on i
-nput line 103.
-
-(/usr/local/texlive/2026/texmf-dist/tex/latex/fontawesome5/ufontawesomefree2.fd
-)
-LaTeX Font Info:    Trying to load font information for U+fontawesomefree1 on i
-nput line 104.
-
-(/usr/local/texlive/2026/texmf-dist/tex/latex/fontawesome5/ufontawesomefree1.fd
-)
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 104.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 104.
 LaTeX Font Info:    Trying to load font information for U+lasy on input line 10
 4.
- (/usr/local/texlive/2026/texmf-dist/tex/latex/base/ulasy.fd
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+fontawesomebrands0 on
- input line 105.
-
-(/usr/local/texlive/2026/texmf-dist/tex/latex/fontawesome5/ufontawesomebrands0.
-fd)
-LaTeX Font Info:    Font shape `U/fontawesomebrands0/solid/n' in size <10> not 
-available
-(Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead o
-n input line 105.
-
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
-(Font)              using `OT1/cmr/bx/n' instead on input line 111.
+(Font)              using `OT1/cmr/bx/n' instead on input line 112.
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 139.
 [1
 
-{/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
-al/texlive/2026/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc}{/usr/loca
-l/texlive/2026/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc}{/usr/local
-/texlive/2026/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc}]
-Overfull \hbox (0.55968pt too wide) in paragraph at lines 188--190
-[]  
- []
-
-
-Overfull \hbox (0.55968pt too wide) in paragraph at lines 198--200
-[]  
- []
-
-[2] (./resume.aux)
+{/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+[2{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
+}] (./resume.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -478,37 +431,28 @@ L3 programming layer <2026-01-19>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-Package rerunfilecheck Warning: File `resume.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `resume.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  562BA5B9448FFDBA22F8BA5878277259;801.
+Package rerunfilecheck Info: File `resume.out' has not changed.
+(rerunfilecheck)             Checksum: 99070A6D53A437D4031DAB4803F990A3;808.
  ) 
 Here is how much of TeX's memory you used:
- 14150 strings out of 467525
- 244144 string characters out of 5418981
- 678121 words of memory out of 5000000
- 42914 multiletter control sequences out of 15000+600000
- 632757 words of font info for 59 fonts, out of 8000000 for 9000
+ 10983 strings out of 467525
+ 173148 string characters out of 5418981
+ 628976 words of memory out of 5000000
+ 39778 multiletter control sequences out of 15000+600000
+ 631138 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,7n,79p,465b,709s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2026/texmf-dist/fonts/type1/public/fontawesome5/FontAweso
-me5Brands-Regular.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/fo
-ntawesome5/FontAwesome5Free-Solid.pfb></usr/local/texlive/2026/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2026/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2026/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2026/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2026/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmti10.pfb>
-Output written on resume.pdf (2 pages, 127824 bytes).
+ 75i,5n,79p,465b,717s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
+</usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
+usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
+sr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></us
+r/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on resume.pdf (2 pages, 109349 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
- 55 compressed objects within 1 object stream
+ 83 PDF objects out of 1000 (max. 8388607)
+ 64 compressed objects within 1 object stream
  9 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 49 words of extra memory for PDF output out of 10000 (max. 10000000)
 

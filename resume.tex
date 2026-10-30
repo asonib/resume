@@ -18,7 +18,6 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
-\usepackage{fontawesome5}
 \usepackage{multicol}
 \setlength{\multicolsep}{-3.0pt}
 \setlength{\columnsep}{-1pt}
@@ -46,7 +45,7 @@
 \pdfgentounicode=1
 
 %-------------------------
-% Custom commands
+% Custom commands - ATS-friendly versions without tables
 \newcommand{\resumeItem}[1]{
   \item\small{
     {#1 \vspace{-2pt}}
@@ -59,32 +58,33 @@
   }
 }
 
+% ATS-friendly subheading without tabular environment
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
-    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textbf{\small #2} \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+    \textbf{#1} \hfill \textbf{\small #2} \\
+    \textit{\small#3} \hfill \textit{\small #4}
+  \vspace{-7pt}
 }
 
+% ATS-friendly sub-subheading without tabular environment
 \newcommand{\resumeSubSubheading}[2]{
     \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
+    \textit{\small#1} \hfill \textit{\small #2}
+    \vspace{-7pt}
 }
 
+% ATS-friendly project heading without tabular environment
 \newcommand{\resumeProjectHeading}[2]{
     \item
-    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & \textbf{\small #2}\\
-    \end{tabular*}\vspace{-7pt}
+    \small#1 \hfill \textbf{\small #2}
+    \vspace{-7pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
-\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+% ATS-friendly bullet points
+\renewcommand\labelitemi{$\bullet$}
+\renewcommand\labelitemii{$\bullet$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
@@ -100,10 +100,11 @@
 \begin{center}
     {\Huge \scshape Aryan Burman} \\ \vspace{1pt}
     Bangalore, India \\ \vspace{1pt}
-    \small \raisebox{-0.1\height}\faPhone\ +91 834 0505 682 ~ 
-    \href{mailto:arburman@outlook.com}{\raisebox{-0.2\height}\faEnvelope\ \underline{arburman@outlook.com}} ~ 
-    \href{https://linkedin.com/in/aryan-burman}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/aryan-burman}} ~
-    \href{https://github.com/aryan-burman}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/aryan-burman}}
+    \small 
+    +91 834 0505 682 $|$ 
+    \href{mailto:arburman@outlook.com}{\underline{arburman@outlook.com}} $|$ 
+    \href{https://www.linkedin.com/in/aryan-burman-5a778516b/}{\underline{linkedin.com/in/aryan-burman-5a778516b}} $|$
+    \href{https://github.com/asonib}{\underline{github.com/asonib}}
     \vspace{-8pt}
 \end{center}
 
@@ -116,14 +117,14 @@
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: JavaScript, TypeScript, Java, Python, SQL, HTML5, CSS3} \\
-     \textbf{Frontend}{: React.js, Redux Toolkit, Storybook, Ant Design, Material-UI, Responsive Web Design} \\
-     \textbf{Backend}{: Node.js, Express.js, Spring Boot, RESTful APIs, Microservices Architecture, GraphQL} \\
-     \textbf{Databases}{: PostgreSQL, MongoDB, Redis, SQL Query Optimization, Database Design} \\
-     \textbf{Message Queues}{: RabbitMQ, Event-Driven Architecture, Asynchronous Processing} \\
-     \textbf{DevOps \& Cloud}{: Docker, Jenkins, Git, AWS (EC2, S3, RDS), Nginx, CI/CD Pipelines} \\
-     \textbf{Testing \& Quality}{: Jest, JUnit, React Testing Library, Postman, SonarQube, Unit Testing} \\
-     \textbf{Tools}{: VS Code, IntelliJ IDEA, Maven, npm, Jira, Confluence}
+     \textbf{Languages}: JavaScript, TypeScript, Java, Python, SQL, HTML5, CSS3 \\
+     \textbf{Frontend}: React.js, Redux Toolkit, Storybook, Ant Design, Material-UI, Responsive Web Design \\
+     \textbf{Backend}: Node.js, Express.js, Spring Boot, RESTful APIs, Microservices Architecture, GraphQL \\
+     \textbf{Databases}: PostgreSQL, MongoDB, Redis, SQL Query Optimization, Database Design \\
+     \textbf{Message Queues}: RabbitMQ, Event-Driven Architecture, Asynchronous Processing \\
+     \textbf{DevOps and Cloud}: Docker, Jenkins, Git, AWS (EC2, S3, RDS), Nginx, CI/CD Pipelines \\
+     \textbf{Testing and Quality}: Jest, JUnit, React Testing Library, Postman, SonarQube, Unit Testing \\
+     \textbf{Tools}: VS Code, IntelliJ IDEA, Maven, npm, Jira, Confluence
     }}
 \end{itemize}
 \vspace{-16pt}
@@ -218,13 +219,13 @@
 \vspace{-15pt}
 
 %-----------CERTIFICATIONS-----------
-\section{Certifications \& Achievements}
+\section{Certifications and Achievements}
 \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     $\bullet$ AWS Certified Cloud Practitioner (in progress) \\
-     $\bullet$ Completed LeetCode 200+ problems (Medium/Hard focus) \\
-     $\bullet$ Recognized with "Best Team Player" award Q3 2023 for cross-functional collaboration \\
-     $\bullet$ Active contributor to open-source projects with 500+ GitHub contributions in 2024
+     \textbullet{} AWS Certified Cloud Practitioner (in progress) \\
+     \textbullet{} Completed LeetCode 200+ problems (Medium/Hard focus) \\
+     \textbullet{} Recognized with Best Team Player award Q3 2023 for cross-functional collaboration \\
+     \textbullet{} Active contributor to open-source projects with 500+ GitHub contributions in 2024
     }}
 \end{itemize}
 
