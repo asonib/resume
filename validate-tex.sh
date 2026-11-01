@@ -13,10 +13,29 @@ BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
 # Default file to validate
-TEX_FILE="${1:-resume.tex}"
+TEX_FILE=""
+NO_BACKUP=false
+
+# Parse arguments
+while [[ $# -gt 0 ]]; do
+    case $1 in
+        --no-backup)
+            NO_BACKUP=true
+            shift
+            ;;
+        *)
+            TEX_FILE="$1"
+            shift
+            ;;
+    esac
+done
+
+# Set default file if not provided
+TEX_FILE="${TEX_FILE:-resume.tex}"
 
 # Temporary directory for build artifacts
 BUILD_DIR=".tex-validate-tmp"
+BACKUP_DIR=".tex-backups"
 
 print_header() {
     echo -e "${BLUE}========================================${NC}"
@@ -47,6 +66,47 @@ cleanup() {
     fi
 }
 
+backup_tex_file() {
+    local file="$1"
+    local filename=$(basename "$file")
+    local basename="${filename%.tex}"
+    local date_suffix=$(date +"%d-%m-%Y")
+    local backup_name="${basename}-${date_suffix}.tex"
+    local backup_path="${BACKUP_DIR}/${backup_name}"
+    
+    # Create backup directory if it doesn't exist
+    mkdir -p "$BACKUP_DIR"
+    
+    # Check if backup already exists for today
+    if [ -f "$backup_path" ]; then
+        print_warning "Backup already exists for today: $backup_name"
+        return 0
+    fi
+    
+    # Copy file to backup
+    cp "$file" "$backup_path"
+    print_success "Backup saved: $backup_name"
+    echo ""
+}
+
+ask_for_backup() {
+    local file="$1"
+    
+    echo -e "${YELLOW}Do you want to backup $file before validation?${NC}"
+    echo -e "${BLUE}Backup will be saved as: $(basename "${file%.tex}")-$(date +"%d-%m-%Y").tex${NC}"
+    read -p "Save backup? (y/n): " -n 1 -r
+    echo ""
+    
+    if [[ $REPLY =~ ^[Yy]$ ]]; then
+        backup_tex_file "$file"
+        return 0
+    else
+        print_info "Skipping backup"
+        echo ""
+        return 1
+    fi
+}
+
 # Set up cleanup on exit
 trap cleanup EXIT
 
@@ -56,13 +116,20 @@ print_header
 if [ ! -f "$TEX_FILE" ]; then
     print_error "File not found: $TEX_FILE"
     echo ""
-    echo "Usage: $0 [filename.tex]"
-    echo "Default: resume.tex"
+    echo "Usage: $0 [options] [filename.tex]"
+    echo "Options:"
+    echo "  --no-backup    Skip backup prompt"
+    echo "Default file: resume.tex"
     exit 1
 fi
 
 print_info "Validating: $TEX_FILE"
 echo ""
+
+# Ask for backup unless --no-backup flag is set
+if [ "$NO_BACKUP" = false ]; then
+    ask_for_backup "$TEX_FILE"
+fi
 
 # Check if pdflatex is installed
 if ! command -v pdflatex &> /dev/null; then
